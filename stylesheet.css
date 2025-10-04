@@ -1,0 +1,92 @@
+header{
+    text-align: center;
+    font-size: larger;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.background-div{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/clouds-1282314.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); /*Change later*/
+    opacity: 0.75;
+    z-index: -1;
+}
+
+
+
+#clock{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 1s; /*To animate box shadow*/
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#clock:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: default;
+}
+
+
+#get_in_button {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border: 1.5px solid gray;
+    border-radius: 8px;
+    background: transparent;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#get_in_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 150, 255, 0.6), transparent);
+    transform: skewX(-25deg);
+    transition: all 0.5s ease;
+}
+
+#get_in_button:hover {
+    color: white;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    border-color: transparent;
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #00bfff, 0 0 40px #0099ff, 0 0 60px #007bff;
+}
+
+#get_in_button:hover::before {
+    left: 125%;
+}
+
+
+#get_in_button a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+#get_in_button a:hover {
+    color: white;
+}

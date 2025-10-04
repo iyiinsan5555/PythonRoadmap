@@ -1,2 +1,2 @@
 # PythonRoadmap
-A web page that contains python roadmap for Müzeyyen
+A web page that contains python roadmap for Müzeyyen.
