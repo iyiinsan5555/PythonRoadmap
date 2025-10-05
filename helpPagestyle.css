@@ -79,3 +79,18 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
+
+.background-div {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/white-gray-backround.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    opacity: 0.75;
+    z-index: -1;
+}
+
